@@ -518,19 +518,19 @@ if __name__ == "__main__":
     root.mainloop()
 
 
-from flask import Flask, render_template_string
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return """
-    <h1>Welcome ❤️</h1>
-    <p>This is my Valentine Web App</p>
-    <button onclick="alert('Yes clicked ❤️')">Yes</button>
-    <button onclick="alert('No clicked 💔')">No</button>
+    <h1>Valentine App ❤️</h1>
+    <button onclick="alert('Yes ❤️')">YES</button>
+    <button onclick="alert('No 💔')">NO</button>
     """
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+
 
